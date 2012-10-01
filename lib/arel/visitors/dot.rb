@@ -58,6 +58,7 @@ module Arel
 
       def visit_Arel_Nodes_DeleteStatement o
         visit_edge o, "relation"
+        visit_edge o, "source"
         visit_edge o, "wheres"
       end
 
